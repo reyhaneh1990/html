@@ -84,25 +84,20 @@ box-shadow: 0 0 10px rgba(0,0,0,0.05);
         Header
     </div>
     
-    <!-- بخش اصلی -->
     <div style="display: flex; height: 300px;">
-        <!-- منوی چپ -->
         <div style="border: 1px solid black; border-right: none; width: 20%; padding: 15px; text-align: center;">
             Left menu
         </div>
         
-        <!-- محتوای اصلی -->
         <div style="border: 1px solid black; border-right: none; width: 60%; padding: 15px; text-align: center;">
             Context
         </div>
         
-        <!-- منوی راست -->
         <div style="border: 1px solid black; width: 20%; padding: 15px; text-align: center;">
             Right menu
         </div>
     </div>
     
-    <!-- فوتر -->
     <div style="border: 1px solid black; border-top: none; padding: 20px; text-align: center;">
         Footer
     </div>
@@ -110,33 +105,36 @@ box-shadow: 0 0 10px rgba(0,0,0,0.05);
 
 <br><br>
 
-<!-- فرم دوم: فرم ثبت اطلاعات -->
 <form action="register.aspx" method="POST">
-    <div style="margin-bottom: 10px;">
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name">
+    <div style="margin-bottom: 15px;">
+        <div style="display: inline-block; width: 80px; text-align: left;">
+            <label for="name">Name</label>
+        </div>
+        <div style="display: inline-block;">
+            <input type="text" id="name" name="name" style="width: 200px;">
+        </div>
     </div>
     
-    <div style="margin-bottom: 10px;">
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email">
+    <div style="margin-bottom: 15px;">
+        <div style="display: inline-block; width: 80px; text-align: left;">
+            <label for="email">Email</label>
+        </div>
+        <div style="display: inline-block;">
+            <input type="email" id="email" name="email" style="width: 200px;">
+        </div>
     </div>
     
-    <div style="margin-bottom: 10px;">
-        <label for="site">Site</label><br>
-        <input type="text" id="site" name="site">
+    <div style="margin-bottom: 15px;">
+        <div style="display: inline-block; width: 80px; text-align: left;">
+            <label for="site">Site</label>
+        </div>
+        <div style="display: inline-block;">
+            <input type="text" id="site" name="site" style="width: 200px;">
+        </div>
     </div>
     
-    <div style="margin-bottom: 10px;">
-        <label for="phone">Phone</label><br>
-        <input type="tel" id="phone" name="phone">
-    </div>
-    
-    <div>
-        <input type="submit" value="Send Data">
-    </div>
-</form>
-
+    <div style="margin-bottom: 15px;">
+        <div style="display: inline-block; width: 80px; text-align
 </body>
 </html>
 
