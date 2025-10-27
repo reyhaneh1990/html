@@ -80,27 +80,63 @@ box-shadow: 0 0 10px rgba(0,0,0,0.05);
             <li>اموزش Asp</li>
         </ul>
     </div>
-   <div style="border: 2px solid black; width:100%;">
-    <div style="color: black; padding: 20px; text-align:center; font-size:24px; border-bottom: 1px solid black;">
+      <div style="border: 1px solid black; border-bottom: none; padding: 20px; text-align: center;">
         Header
     </div>
-    <div style="display: flex; min-height:300px;">
-        <div style="color: black; padding: 15px; width:20%; text-align:center; font-size:24px;">
-            left_menu
+    
+    <!-- بخش اصلی -->
+    <div style="display: flex; height: 300px;">
+        <!-- منوی چپ -->
+        <div style="border: 1px solid black; border-right: none; width: 20%; padding: 15px; text-align: center;">
+            Left menu
         </div>
-        <div style="color: black; padding: 15px; width:60%; text-align:center; font-size:24px;">
-            content
+        
+        <!-- محتوای اصلی -->
+        <div style="border: 1px solid black; border-right: none; width: 60%; padding: 15px; text-align: center;">
+            Context
         </div>
-        <div style="color: black; padding: 15px; width:20%; text-align:center; font-size:24px;">
-            right_menu
+        
+        <!-- منوی راست -->
+        <div style="border: 1px solid black; width: 20%; padding: 15px; text-align: center;">
+            Right menu
         </div>
     </div>
-    <div style="color: black; padding: 15px; width:100%; text-align:center; font-size:24px;">
+    
+    <!-- فوتر -->
+    <div style="border: 1px solid black; border-top: none; padding: 20px; text-align: center;">
         Footer
     </div>
 </div>
-  
+
+<br><br>
+
+<!-- فرم دوم: فرم ثبت اطلاعات -->
+<form action="register.aspx" method="POST">
+    <div style="margin-bottom: 10px;">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name">
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email">
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+        <label for="site">Site</label><br>
+        <input type="text" id="site" name="site">
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+        <label for="phone">Phone</label><br>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    
+    <div>
+        <input type="submit" value="Send Data">
+    </div>
+</form>
 
 </body>
 </html>
-  
+
