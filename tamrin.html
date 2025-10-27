@@ -1,111 +1,212 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title> </title>
-      
+    <title>صفحه شخصی ریحانه جباری</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .personal-info {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .poem {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin: 30px 0;
+            line-height: 2;
+        }
+        
+        .table-container {
+            margin: 30px 0;
+        }
+        
+        .custom-table {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .table-row {
+            display: table-row;
+        }
+        
+        .table-cell {
+            display: table-cell;
+            border: 1px solid #ddd;
+            padding: 30px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        
+        .nested-list {
+            background: #f0f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .nested-list ul {
+            margin-right: 20px;
+        }
+        
+        .layout {
+            margin: 30px 0;
+        }
+        
+        .header, .footer {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background: #e9ecef;
+        }
+        
+        .content-area {
+            display: flex;
+            height: 300px;
+        }
+        
+        .left-menu, .right-menu {
+            border: 1px solid #ccc;
+            width: 20%;
+            padding: 15px;
+            text-align: center;
+            background: #f8f9fa;
+        }
+        
+        .main-content {
+            border: 1px solid #ccc;
+            width: 60%;
+            padding: 15px;
+            text-align: center;
+            background: white;
+        }
+        
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-<style>
-    .table {
-display: table;
-width: 100%;
-border-collapse: collapse;
-margin: 20px 0;
-box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-</style>
-<p>
-    نام:ریحانه  <br>
-    نام خانوادگی: جباری  <br>
-    سن:21 <br>
-    رشته:نرم افزار <br>
-</p>
+    <div class="container">
+        <!-- اطلاعات شخصی -->
+        <div class="personal-info">
+            <h2>اطلاعات شخصی</h2>
+            <p>
+                نام: ریحانه<br>
+                نام خانوادگی: جباری<br>
+                سن: 21<br>
+                رشته: نرم افزار
+            </p>
+        </div>
 
-<hr>
-<pre>
-                       ای نوبهار عاشقان داری از خبر از یار ما 
-                                                                                            ای از تو آبستن چمن و ای از تو خندان باغ ها 
-                    ای بادهای خوش نفس عشاق را فریاد رس
-                                                                                             ای پاک تر از جان و جا آخر کجا بودی کجا 
+        <hr>
 
-                  </pre>
-<a href="web2.html">
+        <!-- شعر -->
+        <div class="poem">
+            <pre>
+ای نوبهار عاشقان داری از خبر از یار ما
+ای از تو آبستن چمن و ای از تو خندان باغ‌ها
+ای بادهای خوش نفس عشاق را فریاد رس
+ای پاک‌تر از جان و جا آخر کجا بودی کجا
+            </pre>
+        </div>
 
-    <img src="Android-Lollipop-5-Problems-Solutions.jpg" width="400px" height="500px"></a>
-<hr>
-<div style="display: table; width: 20%; border: 1px solid black;">
-    <div style="display: table-row;">
-        <div style="display: border: 1px solid black; padding: 30px;"></div>
+        <!-- تصویر -->
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="web2.html">
+                <img src="Android-Lollipop-5-Problems-Solutions.jpg" width="400px" height="500px" alt="تصویر اندروید">
+            </a>
+        </div>
 
-    </div>
-    <div style="display: table-row;">
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
+        <hr>
 
-    </div>
-    <div style="display: table-row;">
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
+        <!-- جدول -->
+        <div class="table-container">
+            <h3>جدول نمونه</h3>
+            <div class="custom-table">
+                <div class="table-row">
+                    <div class="table-cell">ردیف 1 - سلول 1</div>
+                    <div class="table-cell">ردیف 1 - سلول 2</div>
+                    <div class="table-cell">ردیف 1 - سلول 3</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">ردیف 2 - سلول 1</div>
+                    <div class="table-cell">ردیف 2 - سلول 2</div>
+                    <div class="table-cell">ردیف 2 - سلول 3</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">ردیف 3 - سلول 1</div>
+                    <div class="table-cell">ردیف 3 - سلول 2</div>
+                    <div class="table-cell">ردیف 3 - سلول 3</div>
+                </div>
+            </div>
+        </div>
 
-    </div>
-    <div style="display: table-row;">
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
+        <hr>
 
-    </div>
-    <div style="display: table-row;">
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
-        <div style="display: table-cell; border: 1px solid black; padding: 30px;"></div>
-
-    </div>
-</div>
-    <hr>
-    <div>
-        <ul>
-            <li>
-                آموزش HTml
-            </li>
+        <!-- لیست تودرتو -->
+        <div class="nested-list">
+            <h3>لیست دوره‌های آموزشی</h3>
             <ul>
-                <li>پاراگراف و متن</li>
-                <li>تصاویر و پیوند</li>
-                <li>فرم</li>
+                <li>آموزش HTML
+                    <ul>
+                        <li>پاراگراف و متن</li>
+                        <li>تصاویر و پیوند</li>
+                        <li>فرم‌ها</li>
+                    </ul>
+                </li>
+                <li>آموزش CSS
+                    <ul>
+                        <li>استایل‌دهی پایه</li>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                    </ul>
+                </li>
+                <li>آموزش ASP.NET
+                    <ul>
+                        <li>مفاهیم پایه</li>
+                        <li>کنترل‌ها</li>
+                        <li>اتصال به دیتابیس</li>
+                    </ul>
+                </li>
             </ul>
-        </ul>
-        <ul>
-            <li>اموزش css</li>
-        </ul>
-         <ul>
-            <li>اموزش Asp</li>
-        </ul>
-    </div>
-      <div style="border: 1px solid black; border-bottom: none; padding: 20px; text-align: center;">
-        Header
-    </div>
-    
-    <div style="display: flex; height: 300px;">
-        <div style="border: 1px solid black; border-right: none; width: 20%; padding: 15px; text-align: center;">
-            Left menu
         </div>
-        
-        <div style="border: 1px solid black; border-right: none; width: 60%; padding: 15px; text-align: center;">
-            Context
-        </div>
-        
-        <div style="border: 1px solid black; width: 20%; padding: 15px; text-align: center;">
-            Right menu
-        </div>
-    </div>
-    
-    <div style="border: 1px solid black; border-top: none; padding: 20px; text-align: center;">
-        Footer
-    </div>
-</div>
 
-<br><br>
-
+        <!-- لایه‌بندی صفحه -->
+        <div class="layout">
+            <div class="header">Header - هدر سایت</div>
+            <div class="content-area">
+                <div class="left-menu">منوی سمت چپ</div>
+                <div class="main-content">محتوای اصلی سایت</div>
+                <div class="right-menu">منوی سمت راست</div>
+            </div>
+            <div class="footer">Footer - فوتر سایت</div>
+        </div>
+    </div>
 </body>
 </html>
-
